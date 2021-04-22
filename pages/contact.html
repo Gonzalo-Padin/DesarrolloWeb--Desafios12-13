@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Inicio HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- link a CDN CSS de bootstrap 5.0 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/main.css">
+<!-- título de la PAGE -->
+		<title>CONTACTO</title>
+	</head>
+<!-- Fin HEAD -->
+<!-- Inicio BODY -->
+	<body class="container-fluid">
+<!-- Inicio HEADER -->
+		<header class="mt-3 bg-success">
+			<!-- Inicio NavBar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-success fs-3">
+			  	<div class="container-fluid">
+			    	<h1 class="text-center mx-5 py-5"><a class="navbar-brand fs-1 fw-bold text-decoration-underline" href="../index.html">La rueda de Aurora <br> Est. 1953</a></h1> 
+			   		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+			      		<span class="navbar-toggler-icon"></span>
+			    	</button>
+			    	<div class="collapse navbar-collapse" id="navBar">
+			      		<ul class="navbar-nav">
+			      			<li class="nav-item dropdown mx-2">
+				         		<a class="nav-link dropdown-toggle fw-bold" href="#" id="X" role="button" data-bs-toggle="dropdown" aria-expanded="false">X</a>
+				         		<ul class="dropdown-menu" aria-labelledby="X">
+				          	  		<li><a class="dropdown-item" href="./x-shirts.html">Camisetas</a></li>
+				          	  		<li><a class="dropdown-item" href="./x-pants.html">Pantalones</a></li>
+				         		</ul>
+				       		</li>
+				       		<li class="nav-item dropdown mx-2">
+				         		<a class="nav-link dropdown-toggle fw-bold" href="#" id="Y" role="button" data-bs-toggle="dropdown" aria-expanded="false">Y</a>
+				         		<ul class="dropdown-menu" aria-labelledby="Y">
+				          	  		<li><a class="dropdown-item" href="./y-shirts.html">Camisetas</a></li>
+				          	  		<li><a class="dropdown-item" href="./y-pants.html">Pantalones</a></li>
+				         		</ul>
+				       		</li>
+				       		<li class="nav-item mx-2 fw-bold">
+				         		<a class="nav-link" aria-current="page" href="./our-factory.html">Nuestra fábrica</a>
+				        	</li>
+				       		<li class="nav-item mx-2 fw-bold">
+				         		<a class="nav-link" href="./terms.html">Condiciones de venta</a>
+				        	</li>
+				       		<li class="nav-item mx-2 fw-bold">
+				         		<a class="nav-link" href="./contact.html">Contacto</a>
+				        	</li>
+			     		</ul>
+			   		</div>
+			  	</div>
+			</nav>
+			<!-- FIN NavBar -->
+			<!-- Ruta de navegación -->
+			<div class="row">
+				<div aria-label="breadcrumb">
+		 			<ol class="breadcrumb px-3 pt-3"> <span class="bg-light p-2">Estás en:</span>
+		 				<li class="bg-light breadcrumb-item p-2"><a href="../index.html">Principal</a></li>
+		   				<li class="bg-light breadcrumb-item active p-2" aria-current="page">Contacto</li>
+		 			</ol>
+				</div>				
+			</div>
+		</header>
+<!-- Fin HEADER -->
+<!-- Inicio BODY -->
+		<main class="container">
+			<div class="row align-items-center m-5">
+				<form action="" method="POST" enctype="application/x-www-form-urlencoded" autocomplete="off">
+					<h2 class="own__content-title overflow-hidden mb-3">Formulario de contacto</h2>
+						<div class="mb-3">
+							<label for="nameForm" class="form-label">Nombre completo</label>
+							<input type="text" class="form-control" id="nameForm">
+						</div>
+
+						<div class="mb-3">
+							<label for="emailForm" class="form-label">Dirección de e-mail</label>
+							<input type="email" class="form-control" id="emailForm">
+						</div>
+
+						<div class="mb-3">
+							<select class="form-select">
+								<option selected>Selecciona el motivo</option>
+									<option value="1">Consulta general</option>
+									<option value="2">Ventas y Marketíng</option>
+									<option value="3">Trabaja con nosotros</option>
+							</select>
+						</div>
+
+						<div class="form-floating mb-3">
+							<textarea class="form-control" id="messageForm" placeholder="Escribe aquí tu mensaje"></textarea>
+							<label for="messageForm">Escribre aquí tu mensaje</label>
+						</div>
+
+						<div class="mb-3">
+							<label for="fileForm" class="form-label">Adjunta un archivo</label>
+							<input class="form-control" type="file" id="fileForm">
+						</div>
+
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="checkbox" id="checkboxForm">
+							<label class="form-check-label" for="checkboxForm">Al hacer click declaro haber leído y aceptado los <a target="_blank" href="./terms.html#terms__privacy">términos de privacidad</a></label>
+						</div>
+
+						<div class="form-check form-switch mb-3">
+							<input class="form-check-input" type="checkbox" id="switchForm" checked>
+							<label class="form-check-label" for="switchForm">Deseo subscribirme a la Newsletter</label>
+						</div>	
+
+						<div class="mb-3">
+							<!-- Button trigger modal -->
+							<input type="submit" value="Enviar" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#messageModal"></input>
+							<input type="reset" value="Restablecer" class="btn btn-secondary mx-4">
+							<!-- Modal -->
+							<div class="modal fade" id="messageModal" tabindex="-1" aria-hidden="true">
+							  	<div class="modal-dialog">
+							    	<div class="modal-content">
+								      	<div class="modal-header">
+								        	<h5 class="modal-title" id="exampleModalLabel">Mensaje recibido</h5>
+								      	</div>
+								      	<div class="modal-body">
+								        	<p>Muchas gracias</p>
+								        	<p>En un plazo no superior a 48h hábiles, alguien de nuestro equipo se pondrá en contacto</p>
+								      	</div>
+								      	<div class="modal-footer">
+								        	<button type="button" data-bs-dismiss="modal" class="btn btn-success">Continuar</button>
+								      	</div>
+							    	</div>
+							  	</div>
+							</div>
+						</div>		
+				</form>			
+			</div>
+		</main>
+<!-- Inicio FOOTER -->
+		<footer class="bg-success">
+			<div class="row">
+				<div class="col-6">
+					<article>
+						<!-- Lista no-ordenada, con links a redes sociales-->
+						<ul class="list-group list-group-horizontal px-5 pt-3"> <span class="pt-2 pe-2">Síguenos en las redes:</span>
+							<li class="list-group-item bg-success"><a href="https://twitter.com/?lang=es" target="_blank"><img src="../media/twitter.svg" alt="Logo Twitter"></a></li>
+
+							<li class="list-group-item bg-success"><a href="https://www.instagram.com/" target="_blank"><img src="../media/instagram.svg" alt="Logo Instagram"></a></li>
+
+							<li class="list-group-item bg-success"><a href="https://www.facebook.com/" target="_blank"><img src="../media/facebook.svg" alt="Logo Facebook"></a></li>
+						</ul>							
+					</article>
+				</div>
+				<div class="col-6">
+					<!-- Básicamente un pseudo-copyright -->
+					<article class="pt-3">
+						<p class="text-center">Página desarrollada por Gonzalo Padín <br> como desafío de la materia Desarrollo Wed por CodeHouse</p>
+						<p class="text-center">Abril 2021</p>						
+					</article>
+				</div>
+			</div>
+		</footer>
+<!-- Fin Footer -->
+<!-- Link a CDN JS de bootstrap 5.0 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<!-- Fin BODY -->
+	</body>
+</html>
